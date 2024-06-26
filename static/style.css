@@ -1,5 +1,5 @@
 body {
-  background-color: #fdfdfd;
+  background-color: #004080;
 }
 
 .card {
@@ -76,12 +76,6 @@ body {
   width: 25px;
 }
 
-.navMenu {
-  padding: 10px;
-  height: 50px;
-  background-color: lightgray;
-}
-
 .tableTitle {
   display: flex;
   align-items: center;
@@ -92,14 +86,17 @@ body {
 h2 {
   margin: auto;
   margin-left: 20px;
+  color: black;
 }
 
 .navMenu {
   padding: 10px;
-  height: 50px;
-  background-color: lightgray;
+  height: 55px;
+  background-color: #00376f;
   display: flex;
   align-items: center;
+  border-bottom: 10px;
+  border-color: black;
 }
 
 .card-header {
@@ -115,4 +112,13 @@ h2 {
 
 .input-group {
   border-radius: 20px !important;
+}
+
+.imageWrapper {
+  padding-left: 10px;
+  transition: 0.3s;
+}
+
+.imageWrapper:hover {
+  background-color: yellow;
 }

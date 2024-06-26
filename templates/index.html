@@ -6,14 +6,12 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
-      href="{{ url_for('static', filename='style.css')}}"
-    />
+      href="{{ url_for('static', filename='style.css')}}" />
   </head>
 
   <body>
@@ -32,8 +30,8 @@
         <div class="card-header msg_head">
           <div class="d-flex bd-highlight">
             <div class="user_info">
-              <span> <b> Chatbot </b> </span>
-              <p><b>Ask me anything!</b></p>
+              <span> <b class="headerText"> Chatbot </b> </span>
+              <p><b class="HeaderText">Ask me anything!</b></p>
             </div>
           </div>
         </div>
@@ -47,8 +45,7 @@
               placeholder="Type your message..."
               autocomplete="off"
               class="form-control type_msg"
-              required
-            />
+              required />
             <div class="input-group-append">
               <button type="submit" id="send" class="input-group-text send_btn">
                 <i class="fas fa-location-arrow"></i>
