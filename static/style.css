@@ -1,5 +1,5 @@
 body {
-  background-color: #004080;
+  background-color: #e0e0e0;
 }
 
 .card {
@@ -92,7 +92,7 @@ h2 {
 .navMenu {
   padding: 10px;
   height: 55px;
-  background-color: #00376f;
+  background-color: #aaaaaa;
   display: flex;
   align-items: center;
   border-bottom: 10px;
