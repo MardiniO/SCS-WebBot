@@ -45,13 +45,17 @@ def chatBot(text):
             ifPrev = 1
             question = text
             if text.isascii():
-                return 'I don\'t know the answer. Can you teach me?'
+                return 'I don\'t know the answer. Can you teach me? \n Hint: Include @ at the beginning and end of the sentence for it to be inputted.'
             else:
-                return 'لا أعرف الإجابة. هل بوسعك أن تعلمني؟'
+                return ' لا أعرف الإجابة. هل بوسعك أن تعلمني؟ تلميح: ضع @ في بداية ونهاية الجملة لتتم إدخالها' 
     else:
         ifPrev = 0
-        addToDatabase(question, text)
-        if text.isascii():
-            return 'Thank you!'
+        print(text[0])
+        if (text[0] == "@" and text[(len(text))-1] == "@"):
+            addToDatabase(question, text)
+            if text.isascii():
+                return 'Thank you!'
+            else:
+                return 'شكرا!'
         else:
-            return 'شكرا!'
+            return "Nothing was learned. Thank you!"
